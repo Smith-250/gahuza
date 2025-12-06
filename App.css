@@ -1,0 +1,128 @@
+/* Container */
+.container {
+  max-width: 700px;
+  margin-left: 40% auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center; /* Center all text inside */
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center inputs horizontally */
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 80%; /* Make inputs uniform width */
+  transition: border 0.3s;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 50%; /* Button centered with smaller width */
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center table */
+}
+
+thead {
+  background-color: #007bff;
+  color: #080404;
+}
+
+th, td {
+  color: #080404;
+  padding: 12px 15px;
+  text-align: center; /* Center text inside table */
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background 0.3s;
+}
+
+/* Action buttons */
+button.edit {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background 0.3s;
+}
+
+button.edit:hover {
+  background-color: #e0a800;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.delete:hover {
+  background-color: #b02a37;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  form input, form button {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
